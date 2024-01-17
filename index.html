@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="CSS/calculator.css">
+    <link rel="icon" href="media/media/669940_calculation_calculator_icon.png" type="image/x-icon">
+</head>
+<body>
+    <!--Textbox at the top-->
+    <input type="text" id="display" value="">
+    <!--The number buttons-->
+    <div class="numberButtons">
+        <button onclick="updateDisplay('1')" class="numButton">1</button>
+        <button onclick="updateDisplay('2')" class="numButton">2</button>
+        <button onclick="updateDisplay('3')" class="numButton">3</button>
+        <button onclick="updateDisplay('+')" class="numButton">+</button>
+    </div>
+    <div class="numberButtons">
+        <button onclick="updateDisplay('4')" class="numButton">4</button>
+        <button onclick="updateDisplay('5')" class="numButton">5</button>
+        <button onclick="updateDisplay('6')" class="numButton">6</button>
+        <button onclick="updateDisplay('-')" class="numButton">-</button>
+    </div>
+    <div class="numberButtons">
+        <button onclick="updateDisplay('7')" class="numButton">7</button>
+        <button onclick="updateDisplay('8')" class="numButton">8</button>
+        <button onclick="updateDisplay('9')" class="numButton">9</button>
+        <button onclick="updateDisplay('x')" class="numButton">x</button>
+    </div>
+    <div class="numberButtons">
+        <button onclick="backspace()" class="numButton"><img src="media/media/216103_backspace_icon.png"></button>
+        <button onclick="updateDisplay('0')" class="numButton">0</button>
+        <button onclick="clearAll()" id="ac" class="numButton">AC</button>
+        <button onclick="updateDisplay('/')" class="numButton"><img src="media/media/divided.png"></button>
+    </div>
+    <!-- Equal Button-->
+    <div class="numberButtons">
+        <button onclick="calculate()" class="equalTo">=</button>
+    </div>
+    
+    <script src="calculator.js"></script>
+</body>
+</html>
